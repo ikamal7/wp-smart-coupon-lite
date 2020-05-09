@@ -1,0 +1,245 @@
+.coupon {
+    display: block;
+    max-width: 900px;
+    box-sizing: border-box;
+    border: 5px dashed #ccc;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "corporate-s", Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    margin: 1rem auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -webkit-transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .coupon:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22), 0 0 0 1px rgba(0,0,0,0.08);
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  .coupon .header {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: #181818;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-sizing: border-box;
+  }
+  .coupon .header span {
+    font-size: 2rem;
+    font-family: "corporate-a", Georgia, serif;
+  }
+  .coupon .body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #222;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    zoom: 1;
+  }
+  .coupon .body:before,
+  .coupon .body:after {
+    content: "";
+    display: table;
+  }
+  .coupon .body:after {
+    clear: both;
+  }
+  .coupon .body .left {
+    position: relative;
+    display: block;
+    width: 40%;
+    height: 257px;
+    float: left;
+    white-space: nowrap;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .coupon .body .left {
+      width: 100%;
+    }
+  }
+  .coupon .body .left .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .coupon .body .left .featured {
+    max-width: 100%;
+    max-height: 257px;
+    vertical-align: middle;
+  }
+  .coupon .body .right {
+    position: relative;
+    display: block;
+    float: right;
+    width: 60%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+  }
+  @media (max-width: 768px) {
+    .coupon .body .right {
+      width: 100%;
+    }
+  }
+  .coupon .body .right .wrapper {
+    padding: 1rem;
+  }
+  .coupon .body .right .wrapper .offer {
+    text-align: center;
+    line-height: 1;
+    font-size: 5.25rem;
+    font-family: "corporate-a", Georgia, serif;
+  }
+  .coupon .body .right .wrapper .offer sup {
+    font-size: 50%;
+  }
+  .coupon .body .right .wrapper .offer sup.post {
+    padding-left: 0.5rem;
+    color: rgba(255,255,255,0.7);
+  }
+  .coupon .body .right .wrapper hr {
+    width: 75%;
+    opacity: 0.3;
+  }
+  .coupon .body .right .wrapper .details {
+    text-align: center;
+    line-height: 1;
+    display: block;
+  }
+  .coupon .body .right .wrapper .details span {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.2rem;
+  }
+  .coupon .body .right .wrapper .dealer {
+    display: block;
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .coupon .body .right .wrapper .dealer .logo {
+    display: inline-block;
+    width: 60%;
+    float: left;
+  }
+  .coupon .body .right .wrapper .dealer .logo .mb {
+    display: inline-block;
+    text-align: center;
+  }
+  .coupon .body .right .wrapper .dealer .logo .mb img {
+    width: 100px;
+  }
+  @media (min-width: 380px) {
+    .coupon .body .right .wrapper .dealer .logo .mb img {
+      margin-left: 1rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .coupon .body .right .wrapper .dealer .logo {
+      width: 100%;
+    }
+    .coupon .body .right .wrapper .dealer .logo .mb {
+      width: 49%;
+      float: left;
+    }
+    .coupon .body .right .wrapper .dealer .logo .mb .featured {
+      margin: 0 auto;
+    }
+    .coupon .body .right .wrapper .dealer .logo .dealer-name {
+      width: 49%;
+      float: none !important;
+      padding-top: 0.5rem;
+    }
+  }
+  .coupon .body .right .wrapper .dealer .logo .dealer-name {
+    display: inline-block;
+    float: right;
+  }
+  @media (max-width: 500px) {
+    .coupon .body .right .wrapper .dealer .logo .dealer-name {
+      text-align: right;
+    }
+  }
+  .coupon .body .right .wrapper .dealer .logo .dealer-name span {
+    position: relative;
+    font-family: "corporate-a", Georgia, serif;
+    display: block;
+    line-height: 0.2;
+    font-size: 0.9rem;
+  }
+  .coupon .body .right .wrapper .dealer .logo .dealer-name span:first-of-type {
+    font-size: 1.15rem;
+    padding-top: 1.7rem;
+  }
+  .coupon .body .right .wrapper .dealer .contact {
+    display: inline-block;
+    width: 39%;
+    text-align: right;
+    padding-top: 1rem;
+    color: rgba(255,255,255,0.8);
+  }
+  @media (max-width: 768px) {
+    .coupon .body .right .wrapper .dealer .contact {
+      display: none;
+    }
+  }
+  .coupon .body .right .wrapper .dealer .contact span {
+    display: block;
+    line-height: 1.2;
+  }
+  .coupon .body .right .wrapper .dealer .contact span:first-of-type {
+    font-family: "corporate-a", Georgia, serif;
+    letter-spacing: 0.6px;
+  }
+  .coupon .footer {
+    display: block;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    padding: 1rem;
+    background-color: #181818;
+    box-sizing: border-box;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+  }
+  .coupon .footer .terms {
+    display: inline-block;
+    width: 78%;
+    font-style: italic;
+    line-height: 1.1;
+  }
+  .coupon .footer .terms span {
+    color: rgba(255,255,255,0.7);
+  }
+  .coupon .footer .exp {
+    display: inline-block;
+    float: right;
+    width: 22%;
+    height: 100%;
+    text-align: center;
+  }
+  .coupon .footer .exp span {
+    font-size: 1.1rem;
+  }
+  @media (min-width: 769px) {
+    .coupon .footer .exp span {
+      line-height: 3.5;
+    }
+  }
+  

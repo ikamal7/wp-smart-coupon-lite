@@ -1,0 +1,16 @@
+{
+    "name": "kamal/wp-smart-coupon-lite",
+    "description": "Creating coupon for marketing",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "KAMAL\\WPSC\\":"includes/"
+        },
+        "files": [
+            "lib/functions.php"
+        ]
+    }
+}
